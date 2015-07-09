@@ -2,6 +2,9 @@
 # loads data for 2/1/2007 and 2/2/2007 and creates time history of 
 # Sub metering in plot3.png
 
+# load data
+unzip("household_power_consumption.zip")
+
 cols <- read.table("household_power_consumption.txt", sep=";",
                    nrows=1, stringsAsFactors=FALSE)
 power_data <- read.table("household_power_consumption.txt",
